@@ -1,0 +1,79 @@
+<?php session_start(); ?>
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de Registro</title>
+    <link href="estilosFinal.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="group">
+        <form method="POST" action="formularioFinal.php">
+            <h2>Formulario de Alta</h2>
+
+            <p>Nombre</p>
+            <div class="form-group has-error has-feedback">
+                <input id="nombre" name="nombre" class="input" type="text" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
+                <span id="icon" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="icon-error" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="nombreValidationResult"></p>
+            <br>
+
+
+            <p>Primer Apellido</p>
+            <div class="form-group has-error has-feedback">
+                <input id="primer-apellido" name="primerApellido" class="input" type="text" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
+                <span id="icon" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="icon-error" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="primerApellidoValidationResult"></p>
+            <br>
+
+            <p>Segundo Apellido</p>
+            <div class="form-group has-error has-feedback">
+                <input id="segundo-apellido" name="segundoApellido" class="input" type="text" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
+                <span id="icon" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="icon-error" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="segundoApellidoValidationResult"></p>
+            <br>
+
+
+            <p>Email</p>
+            <div class="form-group has-error has-feedback">
+                <input id="email" class="input" type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <span id="iconEmail" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="iconErrorEmail" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="emailValidationResult"></p>
+            <br>
+
+
+            <p>Usuario</p>
+            <div class="form-group has-error has-feedback">
+                <input id="login" name="login" class="input" type="text">
+                <span id="icon" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="icon-error" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="usuarioValidationResult"></p>
+            <br>
+
+            <p>Password (entre 4 y 8 caracteres) </p>
+            <div class="form-group has-error has-feedback">
+                <input id="clave" name="password" class="input" type="password" pattern=".{4,8}">
+                <span id="iconClave" style="display:none" class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span id="iconErrorClave" style="display:none" class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <p id="passValidationResult"></p>
+            <br>
+
+            <input class="button" name="submit" type="submit" value="Suscribirse" />
+        </form>
+    </div>
+</body>
+
+</html>

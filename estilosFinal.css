@@ -1,0 +1,81 @@
+body {
+    position: center;
+    font-family: 'Righteous', arial;
+    background-color: #02237e;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Righteous', arial;
+    color: azure;
+}
+
+.cont {
+    color: #add2ff;
+    width: 250px;
+    height: auto;
+    position: center;
+    border-radius: 5px;
+    background-color: #024371;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+p {
+    color: azure;
+    font-size: 10px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[ type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0018d1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    color: rgb(0, 59, 118);
+    background-color: #7bc5fa;
+    border: 2px outset #0018d1;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.input {
+    margin-top: 2px;
+    width: 100%;
+    border-radius: 3px;
+    padding-top: 7px;
+}
+
+.icon-success::before {
+    content: '\2714';
+    color: green;
+}
